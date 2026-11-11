@@ -1,0 +1,45 @@
+{
+  "id": "deck_fixture_3p",
+  "createdAt": "2026-11-11T00:00:00.000Z",
+  "updatedAt": "2026-11-11T00:00:00.000Z",
+  "status": "generated",
+  "theme": "light-biz",
+  "params": {
+    "topic": "企业级 AI 客服 A 轮路演",
+    "audience": "投资人",
+    "pages": 8,
+    "tone": "有说服力",
+    "scene": "路演",
+    "brief": "给投资人讲我们做企业级 AI 客服的 A 轮",
+    "language": "zh"
+  },
+  "outline": [
+    { "id": "p1", "title": "开场：客服成本之痛", "claim": "客服是增长最快的隐性成本", "layout": "cover" },
+    { "id": "p2", "title": "产品方案", "claim": "AI 首答解决 70% 咨询", "layout": "content" },
+    { "id": "p3", "title": "结尾与融资计划", "claim": "本轮融资 3000 万用于获客", "layout": "ending" }
+  ],
+  "slides": [
+    {
+      "id": "p1", "index": 0,
+      "title": "开场：客服成本之痛",
+      "bullets": ["客服人力成本年增 35%", "高峰期排队流失客户", "AI 客服已具备落地条件"],
+      "notes": "开场 30 秒讲一个真实客户排队 8 分钟的故事。",
+      "visual": "数据", "layout": "cover", "status": "done"
+    },
+    {
+      "id": "p2", "index": 1,
+      "title": "产品方案",
+      "bullets": ["意图识别覆盖 92%", "首答解决率 70%", "无缝转人工", "支持私有化部署"],
+      "notes": "重点讲私有化部署，这是大客户决策的关键。",
+      "visual": "图示", "layout": "content", "status": "done"
+    },
+    {
+      "id": "p3", "index": 2,
+      "title": "结尾与融资计划",
+      "bullets": ["本轮拟融资 3000 万", "60% 用于市场获客", "18 个月现金回正"],
+      "notes": "结尾给出明确的资金用途与里程碑。",
+      "visual": "纯文字", "layout": "ending", "status": "done"
+    }
+  ],
+  "dirty": []
+}

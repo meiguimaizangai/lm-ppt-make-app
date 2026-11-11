@@ -1,0 +1,46 @@
+/* Deck Copilot 精简版样式（系统字体栈，零外链字体 — C5） */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', Arial, sans-serif;
+  background: #f6f7fb;
+  color: #1f2937;
+}
+#app { max-width: 1080px; margin: 0 auto; padding: 16px 20px 48px; }
+
+.top { display: flex; align-items: baseline; gap: 12px; padding: 6px 0 14px; }
+.logo { font-size: 20px; font-weight: 700; color: #2563eb; }
+.hint { color: #6b7280; font-size: 12px; }
+.hint.err { color: #dc2626; }
+.h { font-size: 16px; margin: 14px 0 8px; }
+
+.msg { min-height: 22px; font-size: 13px; color: #047857; margin-bottom: 6px; }
+.msg.err { color: #dc2626; }
+
+.main input, .main textarea, .main select {
+  width: 100%; padding: 9px 10px; margin: 6px 0;
+  border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; font-family: inherit;
+  background: #fff;
+}
+.main textarea { min-height: 96px; resize: vertical; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
+.row > input, .row > select { width: auto; flex: 1; min-width: 120px; margin: 0; }
+
+button {
+  font-family: inherit; font-size: 13px; padding: 8px 14px;
+  border: 1px solid #d1d5db; border-radius: 8px; background: #fff; cursor: pointer;
+}
+button.primary { background: #2563eb; border-color: #2563eb; color: #fff; font-weight: 600; }
+button.mini { padding: 5px 9px; font-size: 12px; }
+button:disabled { opacity: .45; cursor: not-allowed; }
+
+.olist { display: flex; flex-direction: column; gap: 6px; margin: 8px 0; }
+.orow { display: flex; gap: 6px; align-items: center; }
+.orow input { margin: 0; }
+
+.slide-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px; margin: 10px 0; }
+.slide-cv { position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 6px; overflow: hidden; border: 1px solid #e5e7eb; }
+.box { position: absolute; overflow: hidden; line-height: 1.35; white-space: pre-wrap; }
+.box.slot { border: 1px dashed #9ca3af; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 12px; }
+.slide-info { font-size: 12px; color: #6b7280; margin: 8px 2px 4px; }
+.slide-actions { display: flex; gap: 6px; }

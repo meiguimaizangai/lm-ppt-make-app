@@ -1,0 +1,35 @@
+{
+  "manifest_version": 1,
+  "name": "Anna Deck Copilot",
+  "slug": "deck-copilot",
+  "version": "0.1.0",
+  "description": "AI 起草、人可编辑的 PPT 初稿工作台：一句话 brief → 大纲 → 逐页要点 → 主题版式 → 导出可继续编辑的 .pptx。",
+  "entry": {
+    "views": ["main"],
+    "ui": "ui/dist/index.html",
+    "default_view": "main"
+  },
+  "views": {
+    "main": { "title": "Deck Copilot", "width": 1180, "height": 780 }
+  },
+  "permissions": {
+    "llm": ["complete", "stream", "catalog"],
+    "storage": ["get", "set", "list", "delete"],
+    "files": ["upload", "download"],
+    "image": ["generate"],
+    "app": ["open_app_view"]
+  },
+  "csp": {
+    "default-src": ["'self'"],
+    "script-src": ["'self'"],
+    "style-src": ["'self'", "'unsafe-inline'"],
+    "img-src": ["'self'", "data:", "blob:"],
+    "font-src": ["'self'"],
+    "connect-src": ["'self'"],
+    "object-src": ["'none'"]
+  },
+  "meta": {
+    "baseline": "requirements.md v0.1 / 方案设计 v0.2",
+    "note": "未在 permissions 中声明的平台 API 一律视为拒绝（负向测试见 tests/manifest.spec.ts）；bundle 静态扫描外链数必须为 0（C5）。"
+  }
+}
